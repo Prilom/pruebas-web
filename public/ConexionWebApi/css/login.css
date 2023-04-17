@@ -1,0 +1,195 @@
+/* ESTILOS BASE */
+
+*{ 
+    padding: 0;
+    font-family:Arial, sans-serif;
+}
+
+html {
+    min-height: flex;
+    display: flex;
+    position: relative;
+    background-image: url("images/fondodos.webp");
+    background-size: cover;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: justify;
+    color: #00175ae0;
+    border: none;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    margin:10px;
+    margin-top: -100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0;
+  
+}
+  
+/* ESTILOS BUTTONS */
+#loginButton {
+    background-color: #ffffffe0;
+    color: #00175ae0;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+#loginButton:hover {
+    background-color: #00175ae0;
+    color: white;
+    }
+
+#createButton {
+    background-color: #ffffffe0;
+    color: #00175ae0;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+#createButton:hover {
+    background-color: #00175ae0;
+    color: white;
+    }
+
+
+#type_id {
+    background-color: #ffffff;
+    color: #00175ae0;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.type_id:focus {
+    background-color: #00175ae0;
+    color: #fff; 
+    outline: none; 
+  }
+
+
+  /* ESTILOS BODY LOGIN */
+  #login-container, #create-container {
+    margin: 20px;
+  }
+  #username, #cif, #phone, #desc_school, #password, #centro,  #zip_code, #country_id, #city {
+    margin: 1px;
+}
+
+#username {
+    background-color: #ffffff;
+    color: #00175ae0;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ 
+#password {
+    background-color: #ffffff;
+    color: #00175ae0;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+#desc_school {
+    background-color: #ffffff;
+    color: #00175ae0;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#cif {
+    background-color: #ffffff;
+    color: #00175ae0;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#phone {
+    background-color: #ffffff;
+    color: #00175ae0;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#email {
+    background-color: #ffffff;
+    color: #00175ae0;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#zip_code {
+    background-color: #ffffff;
+    color: #00175ae0;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#country_id {
+    background-color: #ffffff;
+    color: #00175ae0;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#city {
+    background-color: #ffffff;
+    color: #00175ae0;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+footer {
+    margin-top: 0px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    color: #00175ae0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}

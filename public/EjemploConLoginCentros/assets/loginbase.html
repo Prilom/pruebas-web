@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/login.css">
+  </head>
+  <body>
+
+    <div id="login-container">
+      <h2>Login</h2>
+      <form method="post" id="formdata">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Contraseña" required>
+        <button type="submit" id="login-button">GO</button>
+      </form>
+    </div>
+
+    <div id="create-container">
+      <h2>Create Account</h2>
+      <form method="post" id="formdata">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" required="required"><br>
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" name="apellidos" id="apellidos" required="required"><br>
+        <label for="direccion">Dirección:</label>
+        <input type="text" name="direccion" id="direccion" required="required"><br>
+        <!-- Género:
+        <input type="radio" name="genero" id="hombre" checked="checked">
+        <label for="hombre">Hombre</label>
+        <input type="radio" name="genero" id="mujer">
+        <label for="mujer">Mujer</label>
+        <label for="mayor">Es mayor de 18 años:</label>
+        <input type="checkbox" name="mayor" id="mayor" required="required">
+        <input type="button" id="botonenviar" value="Enviar"> -->
+      </form>
+    </div>
+
+
+    <div id="quiz-container" style="display:none;">
+      <h1>Cuestionario</h1>
+      <div id="question-container"></div>
+      <button id="prev-button" disabled>Anterior</button>
+      <button id="next-button">Siguiente</button>
+      <button id="submit-button" style="display:none;">Enviar</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

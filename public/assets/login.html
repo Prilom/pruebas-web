@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- CHARSET -->
+    <meta charset="UTF-8">
+    <!-- IE-EDGE -->
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <!-- VIEWPORT -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- DESCRIPTION -->
+    <meta name="description" content="Brain_Wave">
+    <!-- AUTHOR -->
+    <meta name="author" content="Brain_Wave">
+    <!-- TITLE -->
+    <title>Login or Create</title>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="../css/login.css"> <!--crear el css con este nombre-->
+    <!-- FONT -->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    
+</head>
+<body>
+  <div id="login-container" align="center">
+    <h2>Login</h2>
+    <form method="post" id="login" >
+      <input type="text" name="username" id="username" placeholder="CIF" autocomplete="off" required><br>
+      <input type="password" name="password" id="password" placeholder="Contraseña" autocomplete="off" required ><br><br>
+      <button type="button" id="loginButton" onclick="sendLoginRequest()">Entrar</button>
+    </form>
+  </div>
+
+  <div id="create-container" align="center">
+    <h2>Create Account</h2>
+    <form method="post" id="formdata" >
+      <input type="text" name="desc_school" id="desc_school" placeholder="Nombre del centro" autocomplete="off" required><br>
+      <input type="text" name="cif" id="cif" placeholder="CIF" autocomplete="off" required><br>
+      <input type="text" name="phone" id="phone" placeholder="Teléfono" autocomplete="off" required><br>
+      <input type="text" name="email" id="email" placeholder="Email" autocomplete="off" required><br>
+      <input type="text" name="codigo" id="zip_code" placeholder="Código postal" autocomplete="off" required><br>
+      <input type="password" name="password" id="password" placeholder="Contraseña" autocomplete="off" required><br>
+      <input type="text" name="country_id" id="country_id" placeholder="País" autocomplete="off" required><br>
+      <input type="text" name="city" id="city" placeholder="Ciudad" autocomplete="off" required><br>
+
+      <label for="opciones"  align="center" > Selecciona:</label>
+      <select id="type_id" name="type_id" required>
+        <option align="center"  value="Public">Público</option>
+        <option align="center"  value="Concerted">Concertado</option>
+        <option align="center"  value="Private">Privado</option>
+      </select><br><br>
+
+      <button type="button" id="createButton" onclick="sendCreateRequest()"> Crear </button><br>
+    </form>
+  </div>
+  
+  <script src="js/loginnew.js"></script>
+
+  </body>
+  <footer class="footer">
+    <link rel="icon" type="image/logo.png" href="imagenes/logo.png">
+    <p> Brain Wave | Improving the future</p>
+    
+    <div class="social-icon">
+        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fs-4 fab fa-instagram"></i></a>
+        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fs-4 fab fa-twitter"></i></a>
+        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fs-4 fab fa-linkedin"></i></a>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Test</title>
+</head>
+<body>
+    <h1>API Test</h1>
+    <form id="itemForm">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <label for="description">Descripción:</label>
+        <input type="text" id="description" name="description">
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+    <pre id="response"></pre>
+
+    <script>
+        document.getElementById("itemForm").addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            const name = document.getElementById("name").value;
+            const description = document.getElementById("description").value;
+
+            const item = {
+                name: name,
+                description: description
+            };
+
+            const response = await fetch("http://localhost:8000/items/", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(item),
+            });
+
+            const data = await response.json();
+            document.getElementById("response").textContent = JSON.stringify(data, null, 2);
+        });
+    </script>
+</body>
+</html>

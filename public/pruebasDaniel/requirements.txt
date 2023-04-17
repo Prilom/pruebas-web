@@ -1,0 +1,8 @@
+# Instalar la ultima version de fastapi
+fastapi
+
+# Instalar el paquete fastapi.middleware.cors (si no quieres hacerlo directamente, puedes hacer)
+fastapi[all]
+
+# Instalar la ultima version de uvicorn (Servidor AGSI)
+uvicorn
